@@ -1,0 +1,241 @@
+/* general purpose */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+body{
+    background-color: hsl(36, 100%, 99%);
+}
+.container{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+header{
+    margin-top: 60px;
+}
+nav{
+    display: flex;
+    align-items: center;
+}
+nav .logo{
+    flex:1
+}
+.icon{
+    display: none;
+}
+nav ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    width: 40vw;
+}
+nav ul li{
+margin-right:35px ;
+}
+nav ul li a{
+text-decoration: none;
+color: black;
+}
+.main-news{
+    margin-top: 50px;
+}
+.main-news .container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.row{
+    width: 65%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.row .img {
+    width: 100%;
+    height: 300px;
+    background-image: url('assets/images/image-web-3-desktop.jpg') ;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.col-2{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+.col-2 h1{
+    flex-basis: 50%;
+    font-size: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.col-2 div{
+    flex-basis: 50%;
+    position: relative;
+}
+.col-2 div p{
+font-size: 15px;
+color:  hsl(236, 13%, 42%);
+line-height: 1.6;
+}
+.col-2 div button{
+position: absolute;
+left: 0;
+bottom: 5px;
+background-color: hsl(5, 85%, 63%);
+border: 0;
+color: white;
+padding: 12px 25px ;
+text-transform: uppercase;
+letter-spacing: 3px;
+margin-top: 30px;
+}
+.rigth-side-news{
+    background-color: hsl(240, 100%, 5%);
+    padding: 25px;
+    width: 30%;
+
+}
+.col{
+    padding: 25px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+}
+hr{
+    border-color: hsl(236, 13%, 42%);
+}
+.content-new h3{
+    color: white;
+}
+.content-new p{
+    color: hsl(233, 8%, 79%);
+    font-size: 15px;
+    margin-top: 10px;
+    line-height: 1.8;
+}
+.rigth-side-news h2{
+    color:  hsl(35, 77%, 62%);
+    font-size: 35px;
+    /* margin-bottom: 20px; */
+}
+.items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+.item{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.item img{
+    height: 120px;
+    padding-right: 20px;
+}
+.item h3{
+    color: hsl(233, 8%, 79%);
+    font-size: 22px;
+}
+.item h4{
+    margin-top: 5px;    
+    margin-bottom: 5px;    
+}
+.item p{
+    line-height: 1.5;
+}
+
+
+@media (max-width:580px) {
+    .row .img {
+        width: 100%;
+        height: 300px;
+        background-image: url('assets/images/image-web-3-mobile.jpg') ;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .col-2{
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        margin-top: 10px;
+    }
+    .col-2 h1{
+        flex-basis: 100%;
+        font-size: 50px;
+        padding: 0;
+        /* padding-left: 20px; */
+        /* padding-right: 20px; */
+    }
+    .col-2 div{
+        flex-basis: 100%;
+        position: static;
+    }
+    .col-2 div button{
+        position: static;
+        margin-top: 40px;
+        background-color: hsl(5, 85%, 63%);
+        border: 0;
+        color: white;
+        padding: 12px 25px ;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        margin-top: 30px;
+        }
+        .rigth-side-news{
+            padding: 25px;
+            width: 100%;
+        
+        }
+        .content-new {
+            width: 100%;
+            padding: 5px;
+        }
+        .items{
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 30px;
+        }
+
+}
+@media (min-width:992px) {
+    .container{
+        width: 	970px;
+    }
+
+}
+@media (max-width:992px) {
+    header{
+        margin-top:40px;
+    }
+    .icon{
+        display: block;
+        margin-right: 10px;
+    }
+    nav ul{
+        display: none;
+    }
+    .row{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+@media (min-width:1440px) {
+    .container{
+        width: 	1200px;
+    }
+}
